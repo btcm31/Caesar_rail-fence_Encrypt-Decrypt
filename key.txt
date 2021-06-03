@@ -1,0 +1,27 @@
+Do dich chuyen Caesar cipher la: 5
+Do dich chuyen Caesar cipher la: 6
+Key cua Rail-fence la: 6
+Key cua Rail-fence la: 2
+Key cua ma hoa nhan: 5
+Do dich chuyen Caesar cipher la: 5
+Do dich chuyen Caesar cipher la: 6
+Do dich chuyen Caesar cipher la: 120
+Do dich chuyen Caesar cipher la: 2
+Key cua Rail-fence la: 5
+Key cua Rail-fence la: 5
+Key cua Rail-fence la: 5
+Key cua Rail-fence la: 5
+Key cua Rail-fence la: 5
+Key cua Rail-fence la: 6
+Do dich chuyen Caesar cipher la: 6
+Key cua Rail-fence la: 6
+Do dich chuyen Caesar cipher la: 6
+Do dich chuyen Caesar cipher la: 6
+Key cua Rail-fence la: 3
+Key cua Rail-fence la: 3
+Key cua Rail-fence la: 6
+Do dich chuyen Caesar cipher la: 90
+Key cua ma hoa nhan: 25
+Key cua ma hoa nhan: 6
+Key cua ma hoa nhan: 8
+Key cua ma hoa nhan: 9

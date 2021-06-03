@@ -1,0 +1,3 @@
+- run encode.py to encrypt the plaintext in plaintext.txt.
+- The outputs are the cipher in ciphertext.txt and the key in key.txt
+- run decode.py to decrypt the cipher in ciphertext.txt 
