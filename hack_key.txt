@@ -1,5 +1,1 @@
-Danh sach key Caesar key co the:
-43
-12
-Danh sach permutation key co the:
-12365487
+key : 99

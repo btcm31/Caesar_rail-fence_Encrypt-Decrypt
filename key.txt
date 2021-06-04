@@ -25,3 +25,8 @@ Key cua ma hoa nhan: 25
 Key cua ma hoa nhan: 6
 Key cua ma hoa nhan: 8
 Key cua ma hoa nhan: 9
+Do dich chuyen Caesar cipher la: 6
+Key cua Rail-fence la: 8
+Key cua ma hoa nhan: 9
+Key cua ma hoa nhan: 99
+Key cua ma hoa nhan: 99

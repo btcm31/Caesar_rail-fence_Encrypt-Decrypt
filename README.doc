@@ -1,5 +1,6 @@
-- run encode.py to encrypt the plaintext in plaintext.txt.
-- The outputs are the cipher in ciphertext.txt and the key in key.txt
-- run decode.py to decrypt the cipher in ciphertext.txt 
-
-!!! Clear ciphertext.txt and hack_plaintext.txt after each encode and decode
+- run encode.py và lựa chọn giải thuật mã hóa
+    + Sau khi mã hóa thì cipher text và key sẽ nằm trong ciphertext.txt và key.txt
+- Để giải mã thì ta run decode.py và lựa chọn giải thuật muốn sử dụng đề dò mã
+    + Decode sẽ thực hiện dò plaintext bằng phương pháp vét cạn các key có thể, với mỗi bản mã dịch ra đối với các key, thì sẽ dò những từ trong đó xem có xuất hiện trong list nhưng từ tiếng anh thông dụng hay không và trả về kết quả.
+    + Nếu tìm được mã hợp lí (chứa các từ thông dụng nằm trong file common_words_list.txt) thì kết quả sẽ được lưu trong 2 file hack
+! Sau mỗi lần test phải clear nội dung trong các file và nhập đoạn mã muốn mã hóa vào file plaintext.txt

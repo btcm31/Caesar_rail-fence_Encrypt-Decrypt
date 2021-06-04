@@ -5,7 +5,11 @@ def saveFile(path, data):
     file.writelines(data)
     file.writelines('\n')
     file.close()
-
+def readVocab():
+    lines = []
+    with open('common_words_list.txt','r') as f:
+        lines = f.readlines()
+    return (" ".join(lines).replace('\n', '')).split()
 def readFile(path):
     lines = []
     with open(path,'r') as f:
@@ -31,24 +35,32 @@ def rail_fenceDecode(ciphertext, key):
 def multiEncode(ciphertext):
     for Key in range(1,len(ciphertext)):
         #for caesarKey in range(0,64):
-        saveFile('hack_plaintext.txt','==============%s=================='%(str(Key)))
         text = rail_fenceDecode(ciphertext,Key)
         plain = Caesar_Decode(text,Key)
-        saveFile('hack_plaintext.txt', plain)
+        test = plain.split()
+        i = [j for j in test if j in readVocab()]
+        if len(i) >= 10:
+            saveFile('hack_plaintext.txt', plain)
+            saveFile('hack_key.txt','key : %s'%str(Key))
 if __name__=='__main__':
     ciphertext = readFile('ciphertext.txt')
     ciphertext = ''.join(ciphertext)
     option = int(input('Chon giai thuat encrypt (1-Caesar,2-Rail-fence,3-Mix):'))
     if option ==1:
         for key in range(64):
-            saveFile('hack_plaintext.txt','==============%s=================='%str(key))
             plain = Caesar_Decode(ciphertext, key)
-            saveFile('hack_plaintext.txt', plain)
+            test = plain.split()
+            i = [j for j in test if j in readVocab()]
+            if len(i) >= 10:
+                saveFile('hack_plaintext.txt', plain)
+                saveFile('hack_key.txt','key : %s'%str(key))
     elif option ==2:
-        print(ord(ciphertext[len(ciphertext)-1]))
         for key in range(1,len(ciphertext)):
-            saveFile('hack_plaintext.txt','==============%s=================='%str(key))
             plain = rail_fenceDecode(ciphertext[:len(ciphertext)-1], key)
-            saveFile('hack_plaintext.txt', plain)
+            test = plain.split()
+            i = [j for j in test if j in readVocab()]
+            if len(i) >= 10:
+                saveFile('hack_plaintext.txt', plain)
+                saveFile('hack_key.txt','key : %s'%str(key))
     elif option ==3:
         plain = multiEncode(ciphertext[:len(ciphertext)-1])
